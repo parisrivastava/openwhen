@@ -1,0 +1,191 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFEBEE; /* Light pink background */
+    color: #333; /* Charcoal text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Prevent hearts from overflowing outside the body */
+}
+
+/* Floating Heart Animation */
+.heart {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #FF4081; /* Bright pink for hearts */
+    transform: rotate(-45deg);
+    animation: float 6s ease-in-out infinite;
+}
+
+.heart:nth-child(odd) {
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Container for the whole content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1; /* Ensure content is above floating hearts */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #D32F2F; /* Red accent for the heading */
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Letter Container Styles */
+.letters-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    max-height: 400px; /* Set a max-height for the scrollable area */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding-right: 20px; /* Add space for the scrollbar */
+}
+
+/* Individual Letter (Envelope) Styling */
+.letter {
+    position: relative;
+    cursor: pointer;
+    background-color: #FFF0F0; /* Light peachy background */
+    border: 1px solid #F8BBD0; /* Soft border */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.letter:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Envelope Shape & Title Styling */
+.envelope {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #FFCC80; /* Peach color for envelope */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.envelope-title {
+    font-size: 16px;
+    color: #6A1B9A; /* Dark purple for envelope title */
+    font-weight: bold;
+}
+
+/* Popup Styles for Letters */
+.letter-popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#letterTitle {
+    font-size: 24px;
+    color: #D32F2F;
+    margin-bottom: 15px;
+}
+
+#letterContent {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.close-btn {
+    background-color: #FF6F61; /* Red button */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #D32F2F;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .letters-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .letter {
+        padding: 15px;
+    }
+
+    .letter-popup {
+        padding: 20px;
+    }
+
+    #letterTitle {
+        font-size: 20px;
+    }
+
+    #letterContent {
+        font-size: 16px;
+    }
+}

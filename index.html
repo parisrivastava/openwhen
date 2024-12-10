@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open When Letters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Open When Letters</h1>
+        <p>Click on an envelope to read a special message!</p>
+
+        <div class="letters-container">
+            <div class="letter" onclick="openLetter('miss')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you miss me</span>
+                </div>
+            </div>
+            <div class="letter" onclick="openLetter('down')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you're feeling down</span>
+                </div>
+            </div>
+            <div class="letter" onclick="openLetter('happy')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you're happy</span>
+                </div>
+            </div>
+            <div class="letter" onclick="openLetter('hug')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you need a hug</span>
+                </div>
+            </div>
+            <div class="letter" onclick="openLetter('sleep')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you can't sleep</span>
+                </div>
+            </div>
+            <div class="letter" onclick="openLetter('alone')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you're feeling alone</span>
+                </div>
+            </div>
+            <div class="letter" onclick="openLetter('bad')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you're having a bad day</span>
+                </div>
+            </div>
+            <div class="letter" onclick="openLetter('laugh')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you need a laugh</span>
+                </div>
+            </div>
+            <div class="letter" onclick="openLetter('motivation')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you need motivation</span>
+                </div>
+            </div>
+            <div class="letter" onclick="openLetter('love')">
+                <div class="envelope">
+                    <span class="envelope-title">Open when you want to feel loved</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Letter Popup (Dialog Box) -->
+        <div id="letterPopup" class="letter-popup">
+            <div class="popup-content">
+                <h2 id="letterTitle"></h2>
+                <p id="letterContent"></p>
+                <button class="close-btn" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
