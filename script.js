@@ -46,10 +46,6 @@ const letters = {
     accomplish: {
         title: "You're AMAZING",
         content: "WOOO congrats on your accomplishment bb 🎉 Keep it up, I believe in youuuu"
-    },
-    date: {
-        title: "Date night 👫",
-        content: "Cook the same recipe together over facetime. High protein fosho"
     }
 };
 
