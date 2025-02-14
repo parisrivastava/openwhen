@@ -33,7 +33,7 @@ const letters = {
     },
     motivate: {
         title: "~motivation~",
-        content: "Sending you some motivation bestie <3 start with a small goal, get that shit done, reward yourself, an on to the next. You got this"
+        content: "Sending you some motivation bestie <3 start with a small goal, get that shit done, reward yourself, and on to the next. You got this"
     },
     mems: {
         title: "Memory lane",
