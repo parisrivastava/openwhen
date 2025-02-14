@@ -15,45 +15,41 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 const letters = {
+    valentine: {
+        title: "Happy Valentine's Day!!",
+        content: "Hey valentine :) Hope these letters make you feel special today. Love and appreciate you"
+    },
     miss: {
-        title: "I Miss You So Much",
-        content: "Every moment apart from you feels so incomplete. Just remember, no matter the distance, my heart is always with you."
-    },
-    down: {
-        title: "You're Not Alone",
-        content: "I'm here for you, through every high and low. We can get through anything, together."
-    },
-    happy: {
-        title: "Celebrating Your Happiness",
-        content: "Seeing you happy makes me smile. I'm so proud of you and all the amazing things you do!"
+        title: "I miss you toooooo",
+        content: "Hugs, kissies, and and time to plan our next trip ;)"
     },
     hug: {
-        title: "A Virtual Hug",
-        content: "Here’s a hug for you, right when you need it. Just imagine me wrapping my arms around you, and know that I’m sending you all my love."
+        title: "",
+        content: "Here for you whenever you need a virtual hug. Just a text or a phone call away"
     },
     sleep: {
-        title: "Sweet Dreams",
-        content: "When you can’t sleep, just think of me. I'll be dreaming of you too, and we'll be together in our dreams."
+        title: "Zzzzzz",
+        content: "Deep breaths, brain dump on your phone's notes app, adjust the room's temperature right, go pee, magnesium it up, phone on charging, text me when you're up"
     },
-    alone: {
-        title: "You're Never Alone",
-        content: "Even when we're apart, remember you have my heart. You are never truly alone, my love."
+    motivate: {
+        title: "~motivation~",
+        content: "Sending you some motivation bestie <3 start with a small goal, get that shit done, reward yourself, an on to the next. You got this"
     },
-    bad: {
-        title: "Bad Day? It'll Get Better",
-        content: "I know today may be tough, but tomorrow is a new day. You’ve got this, and I’ll always be by your side."
-    },
-    laugh: {
-        title: "Here's a Smile",
-        content: "I know life can get tough, but laughter is the best medicine. Here’s a little joke: Why don't skeletons fight each other? They don’t have the guts!"
-    },
-    motivation: {
-        title: "Keep Going, You're Amazing",
-        content: "Whenever you feel like giving up, just remember how strong you are. I believe in you, always."
+    mems: {
+        title: "Memory lane",
+        content: "New York. And that's all I will say about that hehehehe"
     },
     love: {
-        title: "I Love You So Much",
-        content: "I love you more than words can express. You mean the world to me, and I’m so grateful for you."
+        title: "Some lovies for you",
+        content: "Huggies kissies cuddles. Love you ❤️❤️❤️"
+    },
+    accomplish: {
+        title: "You're AMAZING",
+        content: "WOOO congrats on your accomplishment bb 🎉 Keep it up, I believe in youuuu"
+    },
+    date: {
+        title: "Date night 👫",
+        content: "Cook the same recipe together over facetime. High protein fosho"
     }
 };
 
